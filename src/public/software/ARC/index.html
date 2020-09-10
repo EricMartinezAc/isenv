@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title>ARControllers</title>
+	<meta charset="UTF-8">
+	<meta name="title" content="imcontrollersweb">
+	<meta name="description" content="prototipo001web">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href="Public/fwork/css/styles.css"  media="(max-width: 4000px)" rel="stylesheet">
+	<link rel="shortcut icon" href="Public/fwork/Img/ico/.ico" />
+</head>
+
+<body>
+	<section class="izq">
+
+	</section>
+
+	<section class="der container-fluid">
+		<div id="form" >
+			<img id="avatar" src="Public/fwork/Img/logo/arclogo.png" alt="LOGO">
+			<div class="row" >
+				<div class="col-md-3"></div>
+				<div class="col-md-6 offset-md-4 " id="content-form" >
+					<div class="card">
+						<div class="card-header bg-dark text-white text-center">
+							<h3>Inicio de sesión</h3><br>
+						</div>
+						<div class="card-body">
+							<form class="login100-form validate-form " method="POST"
+								action="Controllers/SQL/AuthUsuario.php">
+								<div class="form-group">
+									<input class="form-control input_text_index" type="number" name="cedula" value=""
+										autocomplete="off" placeholder="NUMERO DE CÉDULA">
+								</div>
+								<div class="form-group">
+									<input class="form-control input_text_index" type="password" name="psw" value=""
+										autocomplete="off" placeholder="CONTRASEÑA"><br>
+								</div>
+								<div class="form-group">
+									<input class="btn btn-success btn-block" type="submit" value="CONTINUAR"><br>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3"></div>
+			</div>
+		</div>
+
+
+	</section>
+	<script type="text/javascript" src="Public/fwork/js/config.js"></script>
+</body>
+
+</html>

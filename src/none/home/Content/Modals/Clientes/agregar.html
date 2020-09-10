@@ -1,0 +1,80 @@
+<!-- Modal -->
+    <div class="modal fade" id="ADD_CLIENTE_main_menu" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div style="background-color: white;">
+
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">AGREGAR CLIENTE</h4>
+                </div>
+
+                <div class="container" style="padding: 5%">
+
+                    <form method="POST" action="CONTROLADOR/MySQL/registrar_main_menu.php" >
+
+
+                        <div class="row" style="margin-bottom: 1%">
+                            <div class="col-md-12">
+                                <select name="tipoIDCliente">
+                                    <option value="NIT">
+                                            NIT
+                                    </option>
+                                    <option value="RUT">
+                                            RUT
+                                    </option>
+                                    <option value="CEDULA">
+                                            CEDULA
+                                    </option>
+                                </select>
+                                <input type="text" name="noIDCliente" placeholder="NO IDENTIFICACIÓN" />
+                            </div>
+                        </div>
+
+                        <div class="row" style="margin-bottom: 1%">
+                            <div class="col-md-12">
+                                <input type="text" name="nombreCliente" placeholder="NOMBRE" />
+                                <input type="text" name="emailCliente" id="lista" placeholder="EMAIL" />
+                            </div>
+                        </div>
+
+
+    					<div class="row" style="margin-bottom: 1%">
+                            <div class="col-md-12">
+                                <input type="text" name="nombreContactoCliente" id="lista" placeholder="NOMBRE DE CONTACTO" />
+                                <input type="text" name="cargoContactoCliente" id="lista" placeholder="CARGO " />
+                            </div>
+                        </div>
+                        <div class="row" style="margin-bottom: 1%">
+                            <div class="col-md-12">
+                                <input type="number" name="telefonoCliente" id="lista" placeholder="NO TELEFONO" />
+                                <input type="number" name="numCelularCliente" id="lista" placeholder="NO CELULAR" />
+                            </div>
+                        </div>
+
+                        <div class="row" style="margin-bottom: 1%">
+                            <div class="col-md-12">
+                                <input type="text" name="direccionCliente" id="lista" placeholder="DIRECCIÓN" />
+                                <input type="text" name="ciudadCliente" id="lista" placeholder="CIUDAD - DTO" />
+                            </div>
+                        </div>
+
+
+
+
+                    </form>
+                    
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+
+            </div><!-- modal content -->
+        </div><!-- modal dialog -->
+    </div><!-- modal fade -->
+
+<!-- Cierra Modal 
+SELECT `idCliente`, `nombreCliente`, `noIDCliente`, `tipoIDCliente`, `nombreContactoCliente`, `cargoContactoCliente`, `telefonoCliente`, `numCelularCliente`, `emailCliente`, `direccionCliente`, `ciudadCliente` FROM `clientes` WHERE 1
+ */-->

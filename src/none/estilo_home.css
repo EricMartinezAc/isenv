@@ -1,0 +1,259 @@
+/* generales*/
+*{
+	margin:auto;
+	padding:0px;
+}
+body{
+	zoom:90%;
+	height:100%;
+	padding: 0px 0% 0px 0%;
+	background-color: #AAA;
+}
+/*  cabecera*/
+header{
+	position: absolute;
+	top: 0%;
+	width:100%;
+}
+header nav{
+	width:100%;
+	padding:auto;
+}	
+/* div titulo*/
+.title{
+	padding: 0% 1% 1% 1%;
+}
+.title_menu{
+	float:right;
+	text-align:right;
+	width:70%;
+}
+.title a{
+	margin: 0px 2% 0px 2%;
+	color:#000;
+	font-size:100%;
+}
+
+
+/* div  navbar*/
+.navbar-arc{
+	background:#B64A1C;
+	padding: 0%;
+}
+.navbar-arc ul li{
+	display:inline;
+}
+.navbar-arc ul li a{
+	margin: 0px 0% 0px 1%;
+	color:#FFF;
+	font-size: 10px;
+}  
+#img_title{
+	width:100px;
+}
+.navbar-arc_submenu{
+	background:#B64A1C;
+}
+#navbarArc_submenu_archivo{
+	display: none;
+	padding: 1% 0% 2% 5%;
+	color:white;
+}
+#navbarArc_submenu_archivo ul li{
+	list-style: none;
+}
+#navbarArc_submenu_clientes{
+	display: none;
+	padding: 1% 0% 2% 16%;
+	color:white;
+}
+#navbarArc_submenu_logistica{
+	display: none; 
+	padding: 1% 0% 2% 28%;
+	color:white;
+}
+#navbarArc_submenu_operacion{
+	display: none; 
+	padding: 1% 0% 2% 40%;
+	color:white;
+}
+#navbarArc_submenu_administracion{
+	display: none;
+	padding: 1% 0% 2% 53%;
+	color:white;
+}
+
+
+
+/* contenido */
+/* seccion slider  o carrousel */
+ .slider{
+	width:100%;
+	height:auto;
+	background:blue;
+	float:center;
+}
+.slider img{
+	height:500px;
+}
+/* seccion third o de apoyo*/
+ .third{
+	display: table-cell; 
+	vertical-align: middle; 
+	text-align: justify; 
+	padding: 2% 0px 0px 0px;
+}
+.third #anuncios{
+	width:30%;
+	float:left;
+	margin-left:1%;
+	margin-right:2%;
+}
+.third #herramientas{
+	width:30%;
+	float:left;
+	margin-left:3%;
+	margin-right:3%;
+}
+.third #contactos{
+	width:30%;
+	float:left;
+	margin-left:2%;
+	margin-right:1%;
+}
+section p{
+	margin:10px;
+}
+
+
+#footer{
+	margin-top: 10%;
+	position: relative;
+	bottom:0px;
+	width:100%;
+	height:100%;
+	background:#AAA;
+	color:white;
+	padding:1% 20% 1% 20%;
+}
+#footer img{
+	width:300px;
+	position:absolute;
+	left:-50px;
+}
+
+
+@media (max-width: 800.98px) { 
+	/* dispositivos celulares--------------------------------------#####*/
+	
+/* generales*/
+
+/*  cabecera*/
+header nav{
+	float:left;
+}	
+/* div titulo*/
+.title{
+	padding: 0px 1% 1% 1%;
+}
+.title img{
+	width:100%;
+	float:left;
+}
+.title_menu{
+	display:inline-block;
+	width:100%;
+	float:left;
+	text-align:center;
+}
+.title a{
+	margin: 0px 2% 0px 2%;
+	color:#000;
+	font-size:50%;
+}
+/* div  navbar*/
+.navbar-arc ul li{
+	display: flex; 
+	justify-content: center; 
+	align-items: center;
+}
+
+/* contenido */
+/* seccion slider  o carrousel */
+ .slider{
+	width:100%;
+	height:auto;
+	float:left;
+}
+.slider img{
+	height:300px;
+}
+/* seccion third o de apoyo*/
+ 
+.third #anuncios{
+	width:100%;
+}
+.third #herramientas{
+	width:100%;
+}
+.third #contactos{
+	width:100%;
+}
+.third{
+	padding-left: 30px;
+	padding-right:30px;
+}
+
+
+footer{
+	padding:10% 10% 1% 10%;
+}
+footer img{
+	display:none;
+}
+
+	
+	
+	
+
+ }
+@media (min-width: 576px) and (max-width: 767.98px) { 
+footer{
+	background:blue;
+	}
+}  
+@media (min-width: 768px) and (max-width: 991.98px) { 
+footer{
+	background:red;
+	} 
+}  
+@media (min-width: 992px) and (max-width: 2000px) { 
+footer{
+		background:green;
+		} 
+ }  
+@media (min-width: 1200px) { 
+footer{
+		display: none
+		} 
+}
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+
+

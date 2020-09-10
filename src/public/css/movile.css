@@ -1,0 +1,21 @@
+@media only screen and (max-width: 1400px) {
+  nav .text_navSlider_2 img {
+    width: 350px;
+    top: -50px;
+  }
+}
+  @media only screen and (max-width: 1200px) {
+    nav .text_navSlider_2 img {
+      width: 200px;
+    }
+  }
+@media only screen and (max-width: 1150px) {
+    nav .text_navSlider_2 img {
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 1000px) {
+    nav .nav_mainMenu ul {
+      display: none;
+    }
+  }

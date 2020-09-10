@@ -1,0 +1,376 @@
+/*
+	background: rgba(53,117,140,1);
+	background: -moz-linear-gradient(left, rgba(53,117,140,1) 0%, rgba(41,184,229,1) 50%, rgba(49,160,204,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(53,117,140,1)), color-stop(50%, rgba(41,184,229,1)), color-stop(100%, rgba(49,160,204,1)));
+	background: -webkit-linear-gradient(left, rgba(53,117,140,1) 0%, rgba(41,184,229,1) 50%, rgba(49,160,204,1) 100%);
+	background: -o-linear-gradient(left, rgba(53,117,140,1) 0%, rgba(41,184,229,1) 50%, rgba(49,160,204,1) 100%);
+	background: -ms-linear-gradient(left, rgba(53,117,140,1) 0%, rgba(41,184,229,1) 50%, rgba(49,160,204,1) 100%);
+	background: linear-gradient(to right, rgba(53,117,140,1) 0%, rgba(41,184,229,1) 50%, rgba(49,160,204,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#35758c', endColorstr='#31a0cc', GradientType=1 );
+	*/
+
+body, html {
+    margin: 0 auto;
+    padding: 0;
+    zoom:100%;
+	width: 100%;
+	height:100vh;
+	background: url(../Img/fondos/brooklyn.jpg) no-repeat center top;
+	background-size: cover; 
+	font-family: sans-serif;
+}
+section{
+	width: 350px;
+	height: 450px;
+	background: #000;
+	color: #FFF;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	box-sizing: border-box;	
+	padding: 0% 3%;
+	opacity:0.9;
+	border-radius:1%;
+}
+.auth{
+	display:inline-block;
+}
+.registrer{
+	display:none;
+}
+section .avatar{
+	width: 100%;
+	height: 35%;
+	position: absolute;
+	padding: 0 0;
+	top: -15%;
+	left: calc(0% - 0%)
+}
+section form{
+	padding-top: 40%;
+}
+section label{
+	color: darkgoldenrod;
+}
+.auth input[type="number"],
+.auth input[type="password"], 
+.registrer input[type="text"],
+.registrer input[type="number"],
+.registrer input[type="password"],
+.registrer input[type="email"]{
+	border: none;
+	border-bottom: 1px solid #FFF;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #FFF;
+	background:transparent;
+	font-size: 16px;
+	-moz-appearance:textfield;
+	margin-bottom: 20px;
+}
+.auth input[type="submit"],
+.registrer input[type="submit"]{
+	width: 100%;
+	border: none;
+	outline: none;
+	height: 40px;
+	color: #FFF;
+	font-size: 14px;
+	border-radius: 1%;
+	margin-bottom: 5%;
+}
+.auth input[type="submit"]{
+	background: navy;
+}
+.auth input[type="submit"]:hover{
+	background: royalblue;
+}
+.registrer input[type="submit"]{
+	background: goldenrod;
+}
+.registrer input[type="submit"]:hover{
+	background: peru;
+}
+.pie_pag_index {
+	position: absolute;
+	bottom: 0px;
+	margin-bottom: 5%;
+}
+.pie_pag_index a{
+	text-decoration: none;
+	font-size: 12px;
+	line-height: 20px;
+	color: darkgray;
+}
+.pie_pag_index a:hover{
+	color: goldenrod;
+}
+@media screen and (max-width:1920px) and (max-height:1080px){
+	label{
+		font-size: 18px;
+	}
+}
+@media screen and (max-width:1370px) and (max-height:768px){
+	label{
+		font-size: 10px;
+	}
+}
+@media screen and (max-width:1000px) and (max-height:450px){	
+	section{
+		width: 30%;
+		height: 80%;
+		transform: translate(-50%, -50%);
+	}
+}
+@media screen and (max-height:700px){
+	section{
+		height: 70%;
+	}
+}
+@media screen and (max-height:600px){
+	section{
+		height: 75%;
+	}
+}
+@media screen and (max-height:550px){
+	section .avatar{
+		width: 90%;
+		height: 35%;
+		top: -10%;
+		left: calc(5% - 0%)
+	}
+	section{
+		height: 90%;
+	}
+}
+@media screen and (max-height:450px){
+	body, html {
+		background: #fff;
+	}
+	section{
+		width: 100%;
+		height: 100%;
+		background: #fff;
+		color: goldenrod;
+		top: 0%;
+		left: 0%;
+		position: absolute;
+		transform: translate(0%, 0%);
+	}
+	section form{
+		padding-top: 2%;
+	}
+	section .avatar{
+		display: none;
+	}
+	.auth input[type="number"],
+	.auth input[type="password"], 
+	.registrer input[type="text"],
+	.registrer input[type="number"],
+	.registrer input[type="password"],
+	.registrer input[type="email"]{
+		color: midnightblue;
+		font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	}	
+	.pie_pag_index a{
+		font-size: 11px;
+	}
+}
+@media screen and (max-height:410px){
+	section .avatar{
+		width: 100%;
+		height: 40%;
+		top: 0%;
+		left: calc(-80% - 0%)
+	}
+	section label{
+		font-size: 70%;
+	}
+	.pie_pag_index {
+		margin-bottom: 3%;
+	}.pie_pag_index #link_recPsw {
+		display: none;
+	}	
+}
+@media screen and (max-height:340px){
+	section{
+		width: 300px;
+		left: 35%;
+	}
+	section form{
+		padding-top: 2%;
+	}
+	.pie_pag_index{
+		margin-bottom: 1%;
+	}
+	a #link_singup .pie_pag_index #link_recPsw{
+		font-size: 18px;
+	}
+	a #link_iseeg{
+		font-size: 8;
+	}
+}
+@media screen and (max-height:300px){
+	.auth input[type="number"],
+	.auth input[type="password"], 
+	.registrer input[type="text"],
+	.registrer input[type="number"],
+	.registrer input[type="password"],
+	.registrer input[type="email"]{
+		height: 30px;
+		font-size: 50%;
+		margin-bottom: 2%;
+	}
+	.auth input[type="submit"],
+	.registrer input[type="submit"]{
+		height: 20%;
+		font-size: 100%;
+	}
+}
+@media screen and (max-height:250px){
+	.pie_pag_index #link_recPsw {
+		display: none;
+	}	
+}
+@media screen and (max-height:230px){
+	body{
+		display:none;
+	}
+}
+@media screen and (max-width:320px){
+	section .avatar{
+		width: 15%;
+	}
+}
+@media screen and (max-width:320px) and (max-height:480px){
+	section{
+		width: 80%;
+	}
+	section form{
+		padding-top: 50%;
+	}
+}
+@media screen and (max-width:320px) and (max-height:240px){
+	section{
+		width: 100%;
+		left: 1%;
+	}
+	section form{
+		padding-top: 2%;
+	}
+}
+@media screen and (max-width:2560px) and (max-height:1600px){
+	section{
+		width: 20%;
+	}
+}
+@media screen and (max-width:2880px) and (max-height:1800px){
+	section{
+		width: 15%;
+	}
+}
+@media screen and (max-width:1920px) and (max-height:1080px){
+	section{
+		width: 20%;
+	}
+	section form{
+		padding-top: 40%;
+	}
+}
+@media screen and (max-width:1280px) and (max-height:1024px){
+	section{
+		width: 30%;
+	}
+	section form{
+		padding-top: 45%;
+	}
+	section label{
+		font-size: 14px;
+	}
+}
+@media screen and (max-width:800px) and (max-height:1100px){
+	section{
+		width: 60%;
+	}
+	section form{
+		padding-top: 30%;
+	}
+	section label{
+		font-size: 14px;
+	}
+}
+@media screen and (max-width:500px) and (max-height:900px){
+	section{
+		width: 100%;
+	}
+	section form{
+		padding-top: 30%;
+	}
+	section label{
+		font-size: 14px;
+	}
+}
+@media screen and (max-width:750px) and (max-height:400px){
+	section form{
+		padding-top: 4%;
+	}
+}
+@media screen and (max-width:850px) and (max-height:1300px){
+	section{
+		width: 50%;
+	}
+}
+@media screen and (max-width:1100px) and (max-height:1400px){
+	section .avatar{
+		top: -100px;
+		left: -10%;;
+		width: 300px;
+		height: 150px;
+	}
+	section{
+		width: 50%;
+	}
+	section form{
+		padding-top: 20%;
+	}
+}   
+@media screen and (max-width:1100px) and (max-height:800){
+	section form{
+		padding-top: 20%;
+	}
+}  
+@media screen and (max-width:650px) and (max-height:2000px){
+	section {
+		width: max-content;
+	}
+}  
+@media screen and (max-width:3000px) and (max-height:2900px){
+	section .avatar{
+		top: -100px;
+		left: -10%;;
+		width: 300px;
+		height: 150px;
+	}
+	section{
+		width: 50%;
+	}
+	section form{
+		padding-top: 20%;
+	}
+}  
+@media screen and (max-width:3000px) and (max-height:2700){
+	section .avatar{
+		top: -100px;
+		left: -10%;;
+		width: 300px;
+		height: 150px;
+	}
+	section{
+		width: 50%;
+	}
+	section form{
+		padding-top: 20%;
+	}
+} 
